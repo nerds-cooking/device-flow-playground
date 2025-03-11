@@ -125,7 +125,7 @@ function renderStep(step, options) {
       '<code>/userinfo</code> Request',
       '<code>/userinfo</code> Response',
       generateCurlRequest(
-        '/userinfo',
+        '/oauth/userinfo',
         'GET',
         [`Authorization: Bearer ${options.tokenSet.access_token}`],
         null
