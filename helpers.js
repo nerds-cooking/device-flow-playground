@@ -113,10 +113,10 @@ function renderStep(step, options) {
       options.deviceCode.user_code
     document.getElementById('tenant-activation-link').innerText = `${
       config.tenant
-    }/activate`
+    }/oauth/activate`
     document.getElementById('tenant-activation-link').href = `https://${
       config.tenant
-    }/activate`
+    }/oauth/activate`
   }
 
   if (step === 'complete') {
