@@ -122,10 +122,10 @@ function renderStep(step, options) {
   if (step === 'complete') {
     renderScreen(currentStep.screenId)
     renderReqRes(
-      '<code>/userinfo</code> Request',
-      '<code>/userinfo</code> Response',
+      '<code>/api/account</code> Request',
+      '<code>/api/account</code> Response',
       generateCurlRequest(
-        '/oauth/userinfo',
+        '/api/account',
         'GET',
         [`Authorization: Bearer ${options.tokenSet.access_token}`],
         null
