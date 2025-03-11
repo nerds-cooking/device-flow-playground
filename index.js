@@ -97,7 +97,7 @@ function exchangeDeviceCodeForToken(deviceCode) {
 function fetchUserInfo(tokenSet) {
   const config = getConfig()
 
-  fetch(`https://${config.tenant}/userinfo`, {
+  fetch(`https://${config.tenant}/oauth/userinfo`, {
     method: 'GET',
     headers: {
       Accept: 'application/json',
